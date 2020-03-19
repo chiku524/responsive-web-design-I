@@ -67,99 +67,103 @@ h1, h2, h3, h4, h5 {
 
 header .navigation {
     display: flex;
+    flex-direction: column-reverse;
+    padding-left: 50px;
+    margin: 0px 0px 50px -50px;
     justify-content: space-evenly;
-    margin-top: 30px;
-    margin-left: -50px;
 }
 
-header .navigation img{
-    margin-top: -10px;
-    margin-right: -60px;
+header .navigation .navLinks {
+    display: flex;
+    flex-direction: column;
 }
 
-header .navigation a {
-    text-decoration: none;
+header .navigation .navLinks a {
+    margin-top: 20px; 
+    border-bottom: 1px solid silver;
     color: darkgrey;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    }
+
+header .navigation img.logo {
+    padding-left: 100px;
 }
 
 header .imageContainer {
     display: flex;
     align-content: space-around;
-    margin: 10px;
 }
 
 header .imageContainer img {
     width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin: 0px auto;
 }
 
 .topContent {
+    height: 200px;
+    width: 320px;
     border-bottom: 1px solid black;
-    margin-left: 57px;
-    margin-top: 40px;
-    margin-right: 57px;
+    margin: 40px 0px 30px 20px;
     padding-bottom: 40px;
-    height: 100px;
+    height: 200px;
 }
 
 .mainContent {
-    margin: 57px;
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainContent .digitalDesign {
     border: 1px solid black;
-    width: 47%;
+    width: 80%;
     background-color: lightgrey;
-    margin-bottom: 35px;
+    margin: 0px 0px 35px 7%;
+    padding: 10px;
 }
 
 .mainContent .UX-UI {
     border: 1px solid black;
-    width: 47%;
+    width: 80%;
     background-color: lightgrey;
-    margin-bottom: 35px;
+    margin: 0px 0px 35px 7%;
+    padding: 10px;
 }
 
 .mainContent .digitalMarketing {
     border: 1px solid black;
-    width: 47%;
+    width: 80%;
     background-color: lightgrey;
-    margin-bottom: 35px;
+    margin: 0px 0px 35px 7%;
+    padding: 10px;
 }
 
 .mainContent .webDevelopment {
     border: 1px solid black;
-    width: 47%;
+    width: 80%;
     background-color: lightgrey;
-    margin-bottom: 35px;
+    margin: 0px 0px 35px 7%;
+    padding: 10px;
 }
 
 .mainContent .iosDevelopment {
     border: 1px solid black;
-    width: 47%;
+    width: 80%;
     background-color: lightgrey;
-    margin-bottom: 35px;
+    margin: 0px 0px 35px 7%;
+    padding: 10px;
 }
 
 .mainContent .androidDevelopment {
     border: 1px solid black;
-    width: 47%;
+    width: 80%;
     background-color: lightgrey;
-    margin-bottom: 35px;
-}
-
-.mainContent .leftSide {
-    margin: 20px;
-}
-
-.mainContent .rightSide {
-    margin: 20px;
+    margin: 0px 0px 35px 7%;
+    padding: 10px;
 }
 
 .mainContent button {
@@ -167,134 +171,128 @@ header .imageContainer img {
     height: 40px;
     border-radius: 5px;
     border: 1px solid black;
-}
-
-.bottomContent {
-    margin: 57px;
-    display: flex;
-    border-top: 2px solid black;
-    padding-top: 50px;
-}
-
-.bottomContent .content {
-    width: 50%;
-    padding-right: 80px;
+    margin: 0px 0px 10px 10px;
 }
 
 .bottomContent .image {
-    margin-left: 60px;
+    display: none;
+}
+
+.bottomContent {
+    display: flex;
+    border-top: 2px solid black;
+    justify-content: center;
+    width: 330px;
+    margin: 0px 30px 0px 20px;
+    padding: 20px 10px 0px 10px;
+}
+
+.bottomContent .content {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 25px;
 }
 
 .bottomContent .content .thingList {
     list-style-type: square;
     margin-left: 20px;
+    margin-top: -20px;
 }
 
 footer {
     text-align: center;
 }
 
-@media (max-width: 500px) {
-    body .navigation {
+@media (min-width: 500px) {
+    header .navigation .navLinks{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 50px;
+        flex-direction: row;
     }
-
-    body nav.navigation a {
-        margin-top: 20px; 
-        text-decoration: underline;
-     }
- 
-     body nav.navigation img.logo {
-        padding-left: 40%;
-        float: none;
-        position: relative;
-        bottom: 250px;
-        right: 60px;
-     }
     
-    header .imageContainer img {
-        margin-top: 0px;
+    header .navigation .navLinks a {
+        border-bottom: none;
     }
 
-    .mainContent {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
+    header .navigation img.logo {
+        padding-left: 38%;
     }
 
     .topContent {
-        height: 200px;
-        margin: 25px;
+        width: 700px;
+        padding-bottom: 0px;
     }
 
+    .mainContent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
     .mainContent .digitalDesign {
-        border: 1px solid black;
-        width: 100%;
-        background-color: lightgrey;
-        margin-bottom: 35px;
+        width: 37%;
+        margin-left: -20px;
     }
-    
+
     .mainContent .UX-UI {
-        border: 1px solid black;
-        width: 100%;
-        background-color: lightgrey;
-        margin-bottom: 35px;
+        width: 37%;
     }
-    
+
     .mainContent .digitalMarketing {
-        border: 1px solid black;
-        width: 100%;
-        background-color: lightgrey;
-        margin-bottom: 35px;
+        width: 37%;
+        margin-left: -20px;
     }
-    
+
     .mainContent .webDevelopment {
-        border: 1px solid black;
-        width: 100%;
-        background-color: lightgrey;
-        margin-bottom: 35px;
+        width: 37%;
     }
-    
+
     .mainContent .iosDevelopment {
-        border: 1px solid black;
-        width: 100%;
-        background-color: lightgrey;
-        margin-bottom: 35px;
+        width: 37%;
+        margin-left: -20px;
     }
-    
+
     .mainContent .androidDevelopment {
-        border: 1px solid black;
-        width: 100%;
-        background-color: lightgrey;
-        margin-bottom: 35px;
-    }
-    
-    .bottomContent img {
-        display: none;
+        width: 37%;
     }
 
     .bottomContent {
+        width: 680px;
+    }
+
+    .bottomContent .image {
+        display: block;
+        width: 80%;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    header .navigation {
+        flex-direction: row;
+    }
+
+    header .navigation .navLinks a {
+        justify-content: space-evenly;
+        padding: 0px 60px;
+    }
+
+    header img.logo {
+        margin-left: -90px;
+        margin-top: 10px;
+    }
+
+    .topContent {
+        width: 1150px;
         display: flex;
-        border-top: 2px solid black;
-        padding-top: 50px;
+        flex-direction: column;
         justify-content: center;
-        width: 100%;
-        margin: 0px auto;
-        padding-left: 40px;
+        position: relative;
+        left: 30px;
     }
-    
-    .bottomContent .content {
-        width: 100%;
-        padding-right: 0px;
-        padding-bottom: 25px;
-    }
-    
-    .bottomContent .content .thingList {
-        list-style-type: square;
-        margin-left: 20px;
+
+    .bottomContent {
+        width: 1100px;
+        position: relative;
+        left: 45px;
     }
 }
