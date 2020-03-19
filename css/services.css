@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your Code Starts Here */
+
+header .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+header .navigation img{
+    margin-top: -10px;
+    margin-right: -60px;
+}
+
+header .navigation a {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+header .imageContainer {
+    display: flex;
+    align-content: space-around;
+    margin: 10px;
+}
+
+header .imageContainer img {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.topContent {
+    border-bottom: 1px solid black;
+    margin-left: 57px;
+    margin-top: 40px;
+    margin-right: 57px;
+    padding-bottom: 40px;
+    height: 100px;
+}
+
+.mainContent {
+    margin: 57px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainContent .digitalDesign {
+    border: 1px solid black;
+    width: 47%;
+    background-color: lightgrey;
+    margin-bottom: 35px;
+}
+
+.mainContent .UX-UI {
+    border: 1px solid black;
+    width: 47%;
+    background-color: lightgrey;
+    margin-bottom: 35px;
+}
+
+.mainContent .digitalMarketing {
+    border: 1px solid black;
+    width: 47%;
+    background-color: lightgrey;
+    margin-bottom: 35px;
+}
+
+.mainContent .webDevelopment {
+    border: 1px solid black;
+    width: 47%;
+    background-color: lightgrey;
+    margin-bottom: 35px;
+}
+
+.mainContent .iosDevelopment {
+    border: 1px solid black;
+    width: 47%;
+    background-color: lightgrey;
+    margin-bottom: 35px;
+}
+
+.mainContent .androidDevelopment {
+    border: 1px solid black;
+    width: 47%;
+    background-color: lightgrey;
+    margin-bottom: 35px;
+}
+
+.mainContent .leftSide {
+    margin: 20px;
+}
+
+.mainContent .rightSide {
+    margin: 20px;
+}
+
+.mainContent button {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.bottomContent {
+    margin: 57px;
+    display: flex;
+    border-top: 2px solid black;
+    padding-top: 50px;
+}
+
+.bottomContent .content {
+    width: 50%;
+    padding-right: 80px;
+}
+
+.bottomContent .image {
+    margin-left: 60px;
+}
+
+.bottomContent .content .thingList {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    body .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+    }
+
+    body nav.navigation a {
+        margin-top: 20px; 
+        text-decoration: underline;
+     }
+ 
+     body nav.navigation img.logo {
+        padding-left: 40%;
+        float: none;
+        position: relative;
+        bottom: 250px;
+        right: 60px;
+     }
+    
+    header .imageContainer img {
+        margin-top: 0px;
+    }
+
+    .mainContent {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .topContent {
+        height: 200px;
+        margin: 25px;
+    }
+
+    .mainContent .digitalDesign {
+        border: 1px solid black;
+        width: 100%;
+        background-color: lightgrey;
+        margin-bottom: 35px;
+    }
+    
+    .mainContent .UX-UI {
+        border: 1px solid black;
+        width: 100%;
+        background-color: lightgrey;
+        margin-bottom: 35px;
+    }
+    
+    .mainContent .digitalMarketing {
+        border: 1px solid black;
+        width: 100%;
+        background-color: lightgrey;
+        margin-bottom: 35px;
+    }
+    
+    .mainContent .webDevelopment {
+        border: 1px solid black;
+        width: 100%;
+        background-color: lightgrey;
+        margin-bottom: 35px;
+    }
+    
+    .mainContent .iosDevelopment {
+        border: 1px solid black;
+        width: 100%;
+        background-color: lightgrey;
+        margin-bottom: 35px;
+    }
+    
+    .mainContent .androidDevelopment {
+        border: 1px solid black;
+        width: 100%;
+        background-color: lightgrey;
+        margin-bottom: 35px;
+    }
+    
+    .bottomContent img {
+        display: none;
+    }
+
+    .bottomContent {
+        display: flex;
+        border-top: 2px solid black;
+        padding-top: 50px;
+        justify-content: center;
+        width: 100%;
+        margin: 0px auto;
+        padding-left: 40px;
+    }
+    
+    .bottomContent .content {
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 25px;
+    }
+    
+    .bottomContent .content .thingList {
+        list-style-type: square;
+        margin-left: 20px;
+    }
+}
