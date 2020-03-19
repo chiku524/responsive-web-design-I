@@ -238,7 +238,6 @@ body .navigation .navLinks {
          display: flex;
          position: relative;
          bottom: 350px;
-         border: 1px solid black;
      }
 
      .header {
