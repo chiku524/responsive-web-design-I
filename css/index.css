@@ -140,6 +140,8 @@ body .navigation .navLinks {
   .top-content {
     margin: 30px;
     border-top: 2px solid black;
+    padding: 20px 0px 20px;
+    height: 150px;
   }
   
   .top-content .leftSide {
@@ -249,6 +251,7 @@ body .navigation .navLinks {
         border-top: 2px solid black;
         display: flex;
         flex-direction: column;
+        height: 325px;
       }
       
       .top-content .leftSide {
@@ -270,12 +273,12 @@ body .navigation .navLinks {
         display: flex;
         flex-wrap: wrap;
         width: auto;
-        height: 475px;
+        height: 400px;
       }
       
       .bottom-content .column {
         width: 100%;
-        padding: 20px 0px 0px 0px;
+        padding: 0px 0px 20px 0px;
       }
 
       center .middle-img {
