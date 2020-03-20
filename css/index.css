@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,7 +54,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Baloo Chettan 2', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,221 +65,180 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-body .navigation .navLinks {
-    width: auto;
+html {
+    margin: 20px;
+}
+
+.navigation {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-  
-  body nav.navigation a {
+}
+
+.navigation .navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.navigation .navLinks a {
+    color: silver;
     text-decoration: none;
-    padding: 0 3.5%;
-    margin: 15px;
-    color: darkgrey;
-  }
-  
-  body nav.navigation img.logo {
-    float: right;
-    padding-right: 5%;
-    margin-top: -43px;
-  }
-  
-  .header {
+}
+
+.navigation .imageContainer img.logo {
+    padding-left: 10%;
+}
+
+.header {
     display: flex;
-  }
-  
-  .header .leftContentH {
-    margin: 50px;
-    padding: 100px;
-    width: 30%;
+    justify-content: center;
+    margin-top: 10%;
+    border-bottom: 1px solid black;
+    padding-bottom: 5%;
+}
+
+.header .leftContentH {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    padding-left: 300px;
-  }
-  
-  .header h1 {
-    font-size: 70px;
-    text-transform: uppercase;
-    display: relative;
-  }
-  
-  .header button {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 5%;
+}
+
+.header .leftContentH h1 {
+    font-size: 50px;
+}
+
+.header .leftContentH button.btn {
+    width: 20%;
     height: 30px;
-    width: 150px;
-  }
-  
-  .header button:hover {
-    animation-name: animation2;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-  }
-  
-  @keyframes animation2 {
-    from{background-color: white;}
-    to{background-color: blue;}
-    from{color: black;}
-    to{color: red}
-  }
-  
-  .header .rightContentH {
-    width: 60%;
-    text-align: center;
-  }
-  
-  .header img {
     position: relative;
-    top: 100px;
-  }
-  
-  .top-content {
-    margin: 30px;
-    border-top: 2px solid black;
-    padding: 20px 0px 20px;
-    height: 150px;
-  }
-  
-  .top-content .leftSide {
+    left: 40%;
+    background-color: white;
+}
+
+.header .rightContentH {
     width: 50%;
-    float: left;
-    padding-right: 40px;
-    margin-top: 30px;
-  }
-  
-  .top-content .rightSide {
-    margin-top: 30px;
-    width: 50%;
-    float: right;
-    padding-left: 40px;
-  }
-  
-  center .middle-img {
-    width: 96%;
-  }
-  
-  .bottom-content {
-    margin: 30px;
+}
+
+.header .rightContentH img {
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+}
+
+.topContent {
     display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: 160px;
-  }
-  
-  .bottom-content .column {
-    width: 33.33%;
-    float: left;
-    padding-right: 20px;
-  }
-  
-  .contact {
-    border-top: 2px solid black;
-    height: 200px;
-    padding-top: 80px;
-    margin: 30px;
-  }
-  
-  footer {
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.topContent .leftSide {
+    padding-right: 5%;
+}
+
+.topContent .rightSide {
+    padding-left: 5%;
+}
+
+center .middle-img {
+    margin-top: 5%;
+    width: 97%;
+    margin-bottom: 2%;
+}
+
+.bottomContent {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    padding-bottom: 7%;
+}
+
+.bottomContent .column {
+    padding-right: 2%;
+}
+
+.contact {
+    margin-top: 5%;
+}
+
+footer {
+    margin-top: 10%;
     text-align: center;
-    margin-bottom: 40px;
-  }
+}
 
 @media (max-width: 800px) {
-    body nav.navigation a {
-       padding: 22px;
-       margin-top: 40px; 
+    .navigation {
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 
-    body nav.navigation img.logo {
-        padding-left: 40%;
-        float: none;
+    .navigation .navLinks {
+        width: 100%;
+    }
+
+    .navigation .imageContainer img.logo {
         position: relative;
-        bottom: 100px;
+        left: 30%;
     }
 
-    .bottom-content {
-        padding-bottom: 200px;
-    }
-
-    .header {
-        height: 400px;
-    }
-
-    .header img {
+    .header .rightContentH {
         display: none;
     }
 
-    .header .leftContentH {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        padding-left: 43%;
-        margin-top: -40px;
+    .header .leftContentH button.btn {
+        width: 30%;
+        position: relative;
+        left: 35%;
     }
 }
 
 @media (max-width: 500px) {
+    .navigation .imageContainer img.logo {
+        left: 18%;
+        padding-bottom: 3%;
+    }
 
-     body nav.navigation a {
-        padding: 22px;
-        margin: 0px; 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        border-bottom: 1px solid silver;
-     }
- 
-     body nav.navigation img.logo {
-         padding-left: 28%;
-         float: none;
-         display: flex;
-         position: relative;
-         bottom: 350px;
-     }
+    .navigation .imageContainer {
+        border-bottom: 1px solid grey;
+    }
 
-     .header {
-         width: 80%;
-     }
-
-      .top-content {
-        margin: 30px;
-        border-top: 2px solid black;
-        display: flex;
+    .navigation .navLinks {
         flex-direction: column;
-        height: 325px;
-      }
-      
-      .top-content .leftSide {
-        width: 100%;
-        float: none;
-        margin-top: 30px;
-        padding-right: 0px;
-      }
-      
-      .top-content .rightSide {
-        margin-top: 30px;
-        width: 100%;
-        float: none;
-        padding-left: 0px;
-      }
+    }
 
-     .bottom-content {
-        margin: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        height: 400px;
-      }
-      
-      .bottom-content .column {
-        width: 100%;
-        padding: 0px 0px 20px 0px;
-      }
+    .navigation .navLinks a {
+        padding: 5%;
+        position: relative;
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
 
-      center .middle-img {
-        width: 85%;
-      }
+    .header .leftContentH button.btn {
+        width: 90%;
+        left: 5%;
+    }
+
+    .topContent {
+        flex-direction: column;
+    }
+
+    .topContent .leftSide {
+        padding-right: 0%;
+        padding-bottom: 10%;
+    }
+
+    .topContent .rightSide {
+        padding-left: 0%;
+    }
+
+    .bottomContent {
+        flex-direction: column;
+    }
+
+    .bottomContent .column {
+        padding-top: 10%;
+    }
 }
