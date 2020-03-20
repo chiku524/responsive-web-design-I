@@ -189,7 +189,7 @@ header .imageContainer img {
     display: flex;
     border-top: 2px solid black;
     justify-content: center;
-    width: 330px;
+    width: 90%;
     margin: 0px 30px 0px 20px;
     padding: 20px 10px 0px 10px;
 }
@@ -227,7 +227,8 @@ footer {
     }
 
     header .navigation img.logo {
-        margin-left: 60%;
+        position: relative;
+        left: 60%;
     }
 
     .topContent {
@@ -287,13 +288,13 @@ footer {
     }
 
     header .navigation .navLinks a {
-        padding: 0px 7%;
+        padding: 0px 10%;
     }
 
-    header img.logo {
-        margin-left: 10px;
+    header .navigation img.logo {
         margin-top: 10px;
-        padding-left: 0px;
+        position: relative;
+        left: 100%;
     }
 
     .topContent {

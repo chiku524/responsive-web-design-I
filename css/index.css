@@ -197,7 +197,7 @@ footer {
 
 @media (max-width: 500px) {
     .navigation .imageContainer img.logo {
-        left: 18%;
+        left: 10%;
         padding-bottom: 3%;
     }
 
@@ -216,9 +216,14 @@ footer {
         border-bottom: 1px solid grey;
     }
 
+    .header .leftContentH {
+        position: relative;
+        right: 8%; 
+    }
+
     .header .leftContentH button.btn {
         width: 90%;
-        left: 5%;
+        left: 15%;
     }
 
     .topContent {
