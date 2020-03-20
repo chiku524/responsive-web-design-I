@@ -311,4 +311,9 @@ footer {
         position: relative;
         left: 45px;
     }
+
+    .bottomContent .image {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
