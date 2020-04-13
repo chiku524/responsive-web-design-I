@@ -88,7 +88,7 @@ header .navigation .navLinks a {
     }
 
 header .navigation img.logo {
-    padding-left: 40%;
+    padding-left: 15%;
     margin-top: 10px;
     padding-bottom: 10px;
 }
@@ -288,13 +288,11 @@ footer {
     }
 
     header .navigation .navLinks a {
-        padding: 0px 7%;
+        padding: 0px 5%;
     }
 
     header .navigation img.logo {
         margin-top: 10px;
-        position: relative;
-        left: 20%;
     }
 
     .topContent {
