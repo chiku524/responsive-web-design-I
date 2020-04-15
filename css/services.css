@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your Code Starts Here */
+
+header .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 50px;
+    margin: 0px 0px 50px -50px;
+    justify-content: space-evenly;
+}
+
+header .navigation .navLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+header .navigation .navLinks a {
+    margin-top: 20px; 
+    border-bottom: 1px solid silver;
+    color: darkgrey;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    }
+
+header .navigation img.logo {
+    padding-left: 15%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .navigation .imageContainer {
+    border-bottom: 1px solid silver;
+    width: 100%;
+}
+
+header .imageContainer {
+    display: flex;
+    align-content: space-around;
+}
+
+header .imageContainer img {
+    width: 93%;
+    margin: 0px auto;
+}
+
+.topContent {
+    height: 200px;
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin: 40px 0px 30px 20px;
+    padding-bottom: 40px;
+    height: 200px;
+}
+
+.mainContent {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContent .digitalDesign {
+    border: 1px solid black;
+    width: 80%;
+    background-color: lightgrey;
+    margin: 0px 0px 35px 10%;
+    padding: 10px;
+}
+
+.mainContent .UX-UI {
+    border: 1px solid black;
+    width: 80%;
+    background-color: lightgrey;
+    margin: 0px 0px 35px 10%;
+    padding: 10px;
+}
+
+.mainContent .digitalMarketing {
+    border: 1px solid black;
+    width: 80%;
+    background-color: lightgrey;
+    margin: 0px 0px 35px 10%;
+    padding: 10px;
+}
+
+.mainContent .webDevelopment {
+    border: 1px solid black;
+    width: 80%;
+    background-color: lightgrey;
+    margin: 0px 0px 35px 10%;
+    padding: 10px;
+}
+
+.mainContent .iosDevelopment {
+    border: 1px solid black;
+    width: 80%;
+    background-color: lightgrey;
+    margin: 0px 0px 35px 10%;
+    padding: 10px;
+}
+
+.mainContent .androidDevelopment {
+    border: 1px solid black;
+    width: 80%;
+    background-color: lightgrey;
+    margin: 0px 0px 35px 10%;
+    padding: 10px;
+}
+
+.mainContent button {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0px 0px 10px 10px;
+}
+
+.bottomContent .image {
+    display: none;
+}
+
+.bottomContent {
+    display: flex;
+    border-top: 2px solid black;
+    justify-content: center;
+    width: 90%;
+    margin: 0px 30px 0px 20px;
+    padding: 20px 10px 0px 10px;
+}
+
+.bottomContent .content {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 25px;
+}
+
+.bottomContent .content .thingList {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    header .navigation .navLinks{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header .navigation .navLinks a {
+        border-bottom: none;
+    }
+
+    header .navigation .imageContainer {
+        border-bottom: none;
+        margin: 0px;
+        padding-left: 8%;
+    }
+
+    header .navigation img.logo {
+        position: relative;
+        left: 60%;
+    }
+
+    .topContent {
+        width: 93%;
+        padding-bottom: 0px;
+        height: 15%;
+    }
+
+    .mainContent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .mainContent .digitalDesign {
+        width: 37%;
+        margin-left: -20px;
+    }
+
+    .mainContent .UX-UI {
+        width: 37%;
+    }
+
+    .mainContent .digitalMarketing {
+        width: 37%;
+        margin-left: -20px;
+    }
+
+    .mainContent .webDevelopment {
+        width: 37%;
+    }
+
+    .mainContent .iosDevelopment {
+        width: 37%;
+        margin-left: -20px;
+    }
+
+    .mainContent .androidDevelopment {
+        width: 37%;
+    }
+
+    .bottomContent {
+        width: 680px;
+    }
+
+    .bottomContent .image {
+        display: block;
+        width: 80%;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    header .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header .navigation .navLinks a {
+        padding: 0px 5%;
+    }
+
+    header .navigation img.logo {
+        margin-top: 10px;
+    }
+
+    .topContent {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 2%;
+    }
+
+    .bottomContent {
+        width: 90%;
+        position: relative;
+        left: 45px;
+    }
+
+    .bottomContent .image {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

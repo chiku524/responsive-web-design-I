@@ -1,3 +1,250 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+    margin: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.navigation .navLinks a {
+    color: silver;
+    text-decoration: none;
+}
+
+.navigation .imageContainer img.logo {
+    padding-left: 10%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    border-bottom: 1px solid black;
+    padding-bottom: 5%;
+}
+
+.header .leftContentH {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 5%;
+}
+
+.header .leftContentH h1 {
+    font-size: 50px;
+}
+
+.header .leftContentH button.btn {
+    width: 20%;
+    height: 30px;
+    position: relative;
+    left: 40%;
+    background-color: white;
+}
+
+.header .rightContentH {
+    width: 50%;
+}
+
+.header .rightContentH img {
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+}
+
+.topContent {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.topContent .leftSide {
+    padding-right: 5%;
+}
+
+.topContent .rightSide {
+    padding-left: 5%;
+}
+
+center .middle-img {
+    margin-top: 5%;
+    width: 97%;
+    margin-bottom: 2%;
+}
+
+.bottomContent {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    padding-bottom: 7%;
+}
+
+.bottomContent .column {
+    padding-right: 2%;
+}
+
+.contact {
+    margin-top: 5%;
+}
+
+footer {
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+@media (max-width: 800px) {
+    .navigation {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .navigation .navLinks {
+        width: 100%;
+    }
+
+    .navigation .imageContainer img.logo {
+        position: relative;
+        left: 25%;
+    }
+
+    .header .rightContentH {
+        display: none;
+    }
+
+    .header .leftContentH button.btn {
+        width: 30%;
+        position: relative;
+        left: 35%;
+    }
+}
+
+@media (max-width: 500px) {
+    .navigation .imageContainer img.logo {
+        left: 20%;
+        padding-bottom: 3%;
+    }
+
+    .navigation .imageContainer {
+        border-bottom: 1px solid grey;
+    }
+
+    .navigation .navLinks {
+        flex-direction: column;
+    }
+
+    .navigation .navLinks a {
+        padding: 5%;
+        position: relative;
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
+
+    .header .leftContentH {
+        position: relative;
+        right: 0%; 
+    }
+
+    .header .leftContentH button.btn {
+        width: 90%;
+        left: 0%;
+    }
+
+    .topContent {
+        flex-direction: column;
+    }
+
+    .topContent .leftSide {
+        padding-right: 0%;
+        padding-bottom: 10%;
+    }
+
+    .topContent .rightSide {
+        padding-left: 0%;
+    }
+
+    .bottomContent {
+        flex-direction: column;
+    }
+
+    .bottomContent .column {
+        padding-top: 10%;
+    }
+}
